@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Project's usage on your profile page
 // @namespace    https://www.drupal.org/u/hanoii
-// @version      2019.03.20.1
+// @version      2019.03.20.2
 // @description  Adds colored badges of usage to the projects you created/maintain.
 // @author       Ariel Barreiro
 // @include      /https:\/\/www.drupal.org\/u\/.+$/
@@ -28,7 +28,7 @@
     // Get cache / Bust if necessary
     // If the cache schema changes, make sure to increase this variable number so that updatd scripts will bust it.
     var cache_schema_version = 2;
-    var cache_projects = JSON.parse(localStorage.getItem('user.drupal.user.js'));
+    var cache_projects = JSON.parse(localStorage.getItem('hanoii/contributor.drupal.user.js:cache'));
     if (!cache_projects) {
       cache_projects = {};
     }
@@ -112,7 +112,7 @@
 
         // After all of our promises are resolved, alter DOM as necessary
         $.when.apply($, promises).done(function() {
-          localStorage.setItem('user.drupal.user.js', JSON.stringify(cache_projects));
+          localStorage.setItem('hanoii/contributor.drupal.user.js:cache', JSON.stringify(cache_projects));
 
           // Add badges
           $.each(arguments, function(index, value) {
