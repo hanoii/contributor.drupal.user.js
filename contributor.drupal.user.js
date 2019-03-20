@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Project's usage on your profile page
 // @namespace    https://www.drupal.org/u/hanoii
-// @version      2019.03.20.2
+// @version      2019.03.20.3
 // @description  Adds colored badges of usage to the projects you created/maintain.
 // @author       Ariel Barreiro
 // @include      /https:\/\/www.drupal.org\/u\/.+$/
 // @include      /https:\/\/www.drupal.org\/user\/[0-9]+$/
+// @match        https://www.drupal.org/user
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // @grant        unsafeWindow
