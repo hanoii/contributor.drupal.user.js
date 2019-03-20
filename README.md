@@ -6,4 +6,7 @@ This was just a playground for userscripts.
 
 I tested this with https://github.com/Tampermonkey/tampermonkey on Chrome.
 
+- Green are the ones you created.
+- Yellow are the ones you are listed as a maintainer.
+
 ![Screenshot](screenshot.png)
