@@ -11,6 +11,8 @@ If you have tampermonkey installed, it should be able to take care of installing
 - Green are the ones you created.
 - Yellow are the ones you are listed as a maintainer.
 
+It also sorts your project list by usage, putting your owns first and the ones you mantain after.
+
 It is supposed to work only on your profile page when logged in and it has some localStorage cache not to query the projects every time, but rather weekly. 
 
 ![Screenshot](screenshot.png)
